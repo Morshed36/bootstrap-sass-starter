@@ -1,20 +1,34 @@
 ## Installation
-simple installation guide
+**simple installation guide**
 
-				git clone https://github.com/thelazycoders/bootstrap-sass-starter.git
+Open your Terminal/Command line and clone the project
 
-				cd bootstrap-sass-starter
-				cd src
+```
+git clone https://github.com/thelazycoders/bootstrap-sass-starter.git
+```
 
-				bower install
+Then open the project folder from Terminal/Command line and install the necessary dependencies by running these commands:
 
-				npm install
+```
+npm install
+```
 
-## Run gulp
-this default task will run 'css', 'fonts', 'scripts' tasks and will watch scss folder for 'css' task.
+And for bower components
 
-				gulp
+```
+cd src
+bower install
+```
 
-Run following command to watching scripts
 
-				gulp js
+
+## Run Task
+### open the project folder from Terminal/Command line and run the command you need.
+
+* `gulp` will Compile SASS. It wil also concat and minify all js files
+
+##### Watch Files for Changes
+
+* `gulp watch` will watch `src/scss` and `src/js` directory.
+* `gulp sass` will watch `src/scss` directory.
+* `gulp js` will watch `src/js` directory.
